@@ -3,15 +3,15 @@ def oxford_comma(array)
     array[0]
   elsif array.size == 2
     array.join(" and ")
+  else
+    comma_array = array.collect do |word|
+      if array.last
+        "and " + word
+      else
+        word + ","
+      end
   end
-  array.each do |word|
-    if array.last
-      "and " + word
-    else
-      word + ","
-    end
-  end
-  array.join(" ")
+  comma_array.join(" ")
 # iterate to add commas & and
 
 # then join
