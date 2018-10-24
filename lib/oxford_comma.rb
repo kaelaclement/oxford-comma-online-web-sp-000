@@ -14,8 +14,4 @@ def oxford_comma(array)
     end
     comma_array.join(" ")
   end
-# iterate to add commas & and
-
-# then join
-
 end
