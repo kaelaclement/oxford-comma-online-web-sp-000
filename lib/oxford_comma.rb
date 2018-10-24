@@ -1,3 +1,6 @@
 def oxford_comma(array)
- array.join(", ")
+  sentence = array.join(", ")
+  index = sentence.length - 2
+  sentence[index] << "and "
+  sentence
 end
