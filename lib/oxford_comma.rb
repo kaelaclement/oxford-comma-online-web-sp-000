@@ -11,8 +11,8 @@ def oxford_comma(array)
         word + ","
       end
     end
+    comma_array.join(" ")
   end
-  comma_array.join(" ")
 # iterate to add commas & and
 
 # then join
