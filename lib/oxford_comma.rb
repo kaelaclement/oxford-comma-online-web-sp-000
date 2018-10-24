@@ -4,11 +4,14 @@ def oxford_comma(array)
   elsif array.size == 2
     array.join(" and ")
   end
-  #array.each do |word|
-    #if array.size == 2
-
-
-  #end
+  array.each do |word|
+    if array.last
+      "and " + word
+    else
+      word + ","
+    end
+  end
+  array.join(" ")
 # iterate to add commas & and
 
 # then join
