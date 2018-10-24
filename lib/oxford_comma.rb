@@ -4,11 +4,12 @@ def oxford_comma(array)
   elsif array.size == 2
     array.join(" and ")
   else
-    comma_array = array.collect do |word|
-      if array.last
-        "and " + word
+    comma_array = []
+    array.each.with_index do |word, index|
+      if word == array.last
+        comma_array[-1] = "and " + word
       else
-        word + ","
+        comma_array << word + ","
       end
     end
     comma_array.join(" ")
