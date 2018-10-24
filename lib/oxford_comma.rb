@@ -5,9 +5,9 @@ def oxford_comma(array)
     array.insert(1, "and")
     array.join(" ")
   end
-  
-  index = array.size - 2
-  array.insert(index, "and")
+
+  array.each do |word|
+  end
 # iterate to add commas & and
 
 # then join
