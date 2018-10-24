@@ -6,12 +6,11 @@ def oxford_comma(array)
   else
     comma_array = []
     array.each.with_index do |word, index|
-      if word == array.last
-        comma_array[-1] = "and " + word
-      else
-        comma_array << word + ","
+      if word != array.last
+      comma_array << word + ","
       end
     end
+    comma_array.insert(-1, "and ")
     comma_array.join(" ")
   end
 # iterate to add commas & and
