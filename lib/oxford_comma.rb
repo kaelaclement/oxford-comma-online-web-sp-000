@@ -10,6 +10,7 @@ def oxford_comma(array)
       else
         word + ","
       end
+    end
   end
   comma_array.join(" ")
 # iterate to add commas & and
