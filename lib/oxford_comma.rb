@@ -3,5 +3,4 @@ def oxford_comma(array)
   index = sentence.length - 2
   sentence[index] << "and "
   sentence
-  binding.pry
 end
